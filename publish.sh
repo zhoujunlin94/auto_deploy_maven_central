@@ -13,6 +13,7 @@ export GPG_TTY=zhoujunlin
 
 # mvn --batch-mode clean deploy -DskipTests=true -Dgpg.passphrase=zhoujunlin --settings .github/maven-settings.xml --file pom.xml -X
 
+cd /github/workspace/
 
 mvn clean install -X
 
