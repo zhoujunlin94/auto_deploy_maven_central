@@ -1,0 +1,6 @@
+name: 'Maven Central Publish'
+description: 'Publishes a Maven project to Maven Central repository.'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
