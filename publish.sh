@@ -8,6 +8,8 @@ MAVEN_PASSWORD=$4
 
 echo "$GPG_PRIVATE_KEY" >> private.key
 
+chmod +x private.key
+
 ls -l /github/workspace
 
 cat private.key
