@@ -2,19 +2,19 @@
 
 # 导入已存在的GPG私钥
 
-echo $1
+echo $GPG_PRIVATE_KEY
 
 echo "-------------"
 
-echo $2
+echo $GPG_PASSPHRASE
 
 echo "-------------"
 
-echo $3
+echo $MAVEN_USERNAME
 
 echo "-------------"
 
-echo $4
+echo $MAVEN_PASSWORD
 
 echo $GPG_PRIVATE_KEY >> private.key
 
