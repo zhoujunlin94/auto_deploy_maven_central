@@ -4,3 +4,8 @@ description: 'Publishes a Maven project to Maven Central repository.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    GPG_PRIVATE_KEY: 1
+    GPG_PASSPHRASE: 2
+    MAVEN_USERNAME: 3
+    MAVEN_PASSWORD: 4

@@ -12,7 +12,7 @@
 
     <name>auto_deploy_maven_central</name>
     <url>https://github.com/zhoujunlin94/auto_deploy_maven_central.git</url>
-    <description>uto_deploy_maven_central<</description>
+    <description>auto_deploy_maven_central</description>
     <developers>
         <developer>
             <name>zhoujunlin</name>

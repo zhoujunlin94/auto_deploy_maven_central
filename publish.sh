@@ -8,6 +8,14 @@ echo "-------------"
 
 echo $GPG_PASSPHRASE
 
+echo "-------------"
+
+echo $MAVEN_USERNAME
+
+echo "-------------"
+
+echo $MAVEN_PASSWORD
+
 echo $GPG_PRIVATE_KEY >> private.key
 
 gpg --batch --import private.key
