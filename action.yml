@@ -1,49 +1,30 @@
-# name: 'Maven Central Publish'
-# description: 'Publishes a Maven project to Maven Central repository.'
+name: 'Maven Central Publish'
+description: 'Publishes a Maven project to Maven Central repository.'
 
-# inputs:
-#   GPG-PRIVATE-KEY:
-#     description: 'GPG-PRIVATE-KEY'
-#     required: true
-#     default: "EMPTY"
-#   GPG-PASSPHRASE:
-#     description: 'GPG-PASSPHRASE'
-#     required: true
-#     default: "EMPTY"
-#   MAVEN-USERNAME:
-#     description: 'MAVEN-USERNAME'
-#     required: true
-#     default: "EMPTY"
-#   MAVEN-PASSWORD:
-#     description: 'MAVEN-PASSWORD'
-#     required: true
-#     default: "EMPTY"
-
-
-# runs:
-#   using: 'docker'
-#   image: 'Dockerfile'
-#   args:
-#     - ${{ inputs.GPG-PRIVATE-KEY }}
-#     - ${{ inputs.GPG-PASSPHRASE }}
-#     - ${{ inputs.MAVEN-USERNAME }}
-#     - ${{ inputs.MAVEN-PASSWORD }}
-
-
-
-# action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  GPG_PRIVATE_KEY:
+    description: 'GPG_PRIVATE_KEY'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: "EMPTY"
+  GPG_PASSPHRASE:
+    description: 'GPG_PASSPHRASE'
+    required: true
+    default: "EMPTY"
+  MAVEN_USERNAME:
+    description: 'MAVEN_USERNAME'
+    required: true
+    default: "EMPTY"
+  MAVEN_PASSWORD:
+    description: 'MAVEN_PASSWORD'
+    required: true
+    default: "EMPTY"
+
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.GPG_PRIVATE_KEY }}
+    - ${{ inputs.GPG_PASSPHRASE }}
+    - ${{ inputs.MAVEN_USERNAME }}
+    - ${{ inputs.MAVEN_PASSWORD }}
