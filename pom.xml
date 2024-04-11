@@ -113,7 +113,10 @@
                 <version>${maven-gpg.version}</version>
                 <configuration>
                     <executable>gpg</executable>
+                    <!-- 禁用 GPG 代理 -->
+                    <useAgent>false</useAgent>
                     <keyname>zhoujunlin</keyname>
+                    <passphrase>zhoujunlin</passphrase>
                 </configuration>
                 <executions>
                     <execution>
