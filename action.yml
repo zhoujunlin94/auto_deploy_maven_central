@@ -1,11 +1,21 @@
 name: 'Maven Central Publish'
 description: 'Publishes a Maven project to Maven Central repository.'
 
+inputs:
+  GPG_PRIVATE_KEY:
+    description: 'GPG_PRIVATE_KEY'
+    required: true
+  GPG_PASSPHRASE:
+    description: 'GPG_PASSPHRASE'
+    required: true
+  MAVEN_USERNAME:
+    description: 'MAVEN_USERNAME'
+    required: true
+  MAVEN_PASSWORD:
+    description: 'MAVEN_PASSWORD'
+    required: true
+
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    GPG_PRIVATE_KEY: 1
-    GPG_PASSPHRASE: 2
-    MAVEN_USERNAME: 3
-    MAVEN_PASSWORD: 4
