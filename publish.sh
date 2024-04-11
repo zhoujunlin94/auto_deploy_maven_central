@@ -13,6 +13,6 @@ chmod -R +x /github/workspace
 
 mvn clean install -X
 
-tree /github/workspace/
+find /github/workspace/ -print
 ls -l /github/workspace/target/central-publishing
 ls -l /github/workspace/target/central-staging/io/github/zhoujunlin94/auto_deploy/1.0.0
