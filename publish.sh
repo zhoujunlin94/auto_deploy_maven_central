@@ -15,7 +15,12 @@ export GPG_TTY=zhoujunlin
 
 cd /github/workspace/
 
+mvn help:evaluate -Dexpression=project.build.directory -q -DforceStdout
+
 mvn clean package -X
+
+mvn help:evaluate -Dexpression=project.build.directory -q -DforceStdout
+
 
 ls -l /github/workspace/target/
 ls -l /github/workspace/target/central-publishing
