@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# 导入已存在的 GPG 密钥
-# gpg --batch --import public.key
+# 导入已存在的GPG私钥
+
+echo "your string here" >> private.key
 gpg --batch --import private.key
 
 gpg --list-keys
