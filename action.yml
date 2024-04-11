@@ -20,7 +20,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    GPG_PRIVATE_KEY: ${{ inputs.GPG_PRIVATE_KEY }}
-    GPG_PASSPHRASE: ${{ inputs.GPG_PASSPHRASE }}
-    MAVEN_USERNAME: ${{ inputs.MAVEN_USERNAME }}
-    MAVEN_PASSWORD: ${{ inputs.MAVEN_PASSWORD }}
+    GPG_PRIVATE_KEY: ${{ secrets[inputs.GPG_PRIVATE_KEY] }}
+    GPG_PASSPHRASE: ${{ secrets[inputs.GPG_PASSPHRASE] }}
+    MAVEN_USERNAME: ${{ secrets[inputs.MAVEN_USERNAME] }}
+    MAVEN_PASSWORD: ${{ secrets[inputs.MAVEN_PASSWORD] }}
