@@ -8,7 +8,7 @@
     <artifactId>auto_deploy</artifactId>
     <version>1.0.0</version>
 
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <name>auto_deploy</name>
     <url>https://github.com/zhoujunlin94/auto_deploy.git</url>
