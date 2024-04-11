@@ -120,6 +120,8 @@
                     <executable>gpg</executable>
                     <keyname>zhoujunlin</keyname>
                     <passphrase>zhoujunlin</passphrase>
+                    <interactive>false</interactive>
+                    <useAgent>true</useAgent>
                 </configuration>
                 <executions>
                     <execution>

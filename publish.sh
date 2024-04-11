@@ -6,8 +6,6 @@ gpg --batch --import private.key
 gpg --list-keys
 
 
-echo "no-tty" >> ~/.gnupg/gpg.conf
-
 chmod -R +x /github/workspace
 
 pwd
