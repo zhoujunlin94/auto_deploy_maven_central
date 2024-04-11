@@ -120,7 +120,6 @@
                     <executable>gpg</executable>
                     <keyname>zhoujunlin</keyname>
                     <passphrase>zhoujunlin</passphrase>
-                    <ascDirectory>${project.build.directory}</ascDirectory>
                 </configuration>
                 <executions>
                     <execution>
