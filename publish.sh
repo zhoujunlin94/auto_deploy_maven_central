@@ -15,7 +15,7 @@ export GPG_TTY=zhoujunlin
 
 cd /github/workspace/
 
-mvn clean install -X
+mvn clean package -X
 
 
 ls -l /github/workspace/target/central-publishing
