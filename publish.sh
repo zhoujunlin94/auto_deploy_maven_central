@@ -11,6 +11,8 @@ gpg --list-keys
 
 mvn clean install -X
 
+
+ls -l /root/.m2/repository/io/github/zhoujunlin94/auto_deploy/
 ls -l /github/workspace/target/
 ls -l /github/workspace/target/central-publishing
 ls -l /github/workspace/target/central-staging/io/github/zhoujunlin94/auto_deploy/1.0.0
