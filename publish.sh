@@ -2,7 +2,9 @@
 
 # 导入已存在的GPG私钥
 
-echo $INPUT_MAVEN_USERNAME
+echo "=========="
+
+echo "$INPUT_MAVEN_USERNAME"
 
 echo "=========="
 
