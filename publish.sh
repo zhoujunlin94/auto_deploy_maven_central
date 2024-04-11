@@ -10,6 +10,8 @@ export GPG_TTY=zhoujunlin
 
 chmod -R +x /github/workspace
 
+pwd
+
 # 执行 Maven 构建并发布到 Maven 中央仓库
 mvn --batch-mode clean package verify deploy -DskipTests=true -Dgpg.passphrase=zhoujunlin --settings .github/maven-settings.xml --file pom.xml -X
 
