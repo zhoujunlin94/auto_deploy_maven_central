@@ -2,6 +2,10 @@
 
 # 导入已存在的GPG私钥
 
+echo $INPUT_MAVEN_USERNAME
+
+echo "=========="
+
 GPG_PRIVATE_KEY=$1
 GPG_PASSPHRASE=$2
 MAVEN_USER_NAME=$3
