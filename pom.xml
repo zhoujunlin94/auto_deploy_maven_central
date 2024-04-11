@@ -60,6 +60,9 @@
     </dependencies>
 
     <build>
+
+        <outputDirectory>${project.build.directory}/target</outputDirectory>
+
         <plugins>
             <!--   central发布插件    -->
             <plugin>
