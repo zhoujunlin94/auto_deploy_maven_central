@@ -2,7 +2,7 @@
 
 # 导入已存在的 GPG 密钥
 gpg --batch --import public.key
-gpg --batch --import private.key
+# gpg --batch --import private.key
 gpg --list-keys
 
 
