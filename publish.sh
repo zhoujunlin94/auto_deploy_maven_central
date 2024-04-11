@@ -6,6 +6,8 @@ gpg --batch --import private.key
 gpg --list-keys
 
 
+export GPG_TTY=zhoujunlin
+
 chmod -R +x /github/workspace
 
 # 执行 Maven 构建并发布到 Maven 中央仓库
