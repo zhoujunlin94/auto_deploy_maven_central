@@ -17,6 +17,6 @@ cd /github/workspace/
 
 mvn clean package -X
 
-
+ls -l /github/workspace/target/
 ls -l /github/workspace/target/central-publishing
 ls -l /github/workspace/target/central-staging/io/github/zhoujunlin94/auto_deploy/1.0.0
