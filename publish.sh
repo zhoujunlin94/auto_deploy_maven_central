@@ -13,5 +13,5 @@ export GPG_TTY=zhoujunlin
 mvn --batch-mode clean deploy -DskipTests=true -Dgpg.passphrase=zhoujunlin --settings .github/maven-settings.xml
 
 ls -l /github/workspace/target/central-publishing
-ls -l /github/workspace/target/central-staging
+ls -l /github/workspace/target/central-staging/io/github/zhoujunlin94/auto_deploy
 
