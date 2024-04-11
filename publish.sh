@@ -11,6 +11,8 @@ echo "$GPG_PRIVATE_KEY"
 
 echo "$GPG_PRIVATE_KEY" >> private.key
 
+cat private.key
+
 gpg --batch --import private.key
 
 gpg --list-keys
