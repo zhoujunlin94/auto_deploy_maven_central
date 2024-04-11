@@ -10,7 +10,5 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: List files in target directory
-        run: ls -l /github/workspace
       - name: Maven Central Publish
         uses: ./ # 使用当前仓库中的 Action
