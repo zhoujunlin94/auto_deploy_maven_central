@@ -1,21 +1,10 @@
 #!/bin/bash
 
 # 导入已存在的GPG私钥
-
-echo $@
-
-echo "=========="
-
-echo "$INPUT_MAVEN_USERNAME"
-
-echo "=========="
-
 GPG_PRIVATE_KEY=$1
 GPG_PASSPHRASE=$2
 MAVEN_USER_NAME=$3
 MAVEN_PASSWORD=$4
-
-echo "$GPG_PRIVATE_KEY"
 
 echo "$GPG_PRIVATE_KEY" >> private.key
 
