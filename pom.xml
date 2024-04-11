@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.zhoujunlin94</groupId>
-    <artifactId>auto_deploy</artifactId>
+    <artifactId>auto_deploy_maven_central</artifactId>
     <version>1.0.0</version>
 
     <packaging>jar</packaging>
 
-    <name>auto_deploy</name>
-    <url>https://github.com/zhoujunlin94/auto_deploy.git</url>
-    <description>auto_deploy</description>
+    <name>auto_deploy_maven_central</name>
+    <url>https://github.com/zhoujunlin94/auto_deploy_maven_central.git</url>
+    <description>uto_deploy_maven_central<</description>
     <developers>
         <developer>
             <name>zhoujunlin</name>
@@ -30,9 +30,9 @@
     </licenses>
 
     <scm>
-        <connection>https://github.com/zhoujunlin94/auto_deploy.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:zhoujunlin94/auto_deploy.git</developerConnection>
-        <url>https://github.com/zhoujunlin94/auto_deploy</url>
+        <connection>https://github.com/zhoujunlin94/auto_deploy_maven_central.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:zhoujunlin94/auto_deploy_maven_central.git</developerConnection>
+        <url>https://github.com/zhoujunlin94/auto_deploy_maven_central</url>
     </scm>
 
     <properties>
@@ -45,8 +45,6 @@
         <maven-source.version>2.2.1</maven-source.version>
         <maven-javadoc.version>2.9.1</maven-javadoc.version>
         <maven-gpg.version>1.5</maven-gpg.version>
-
-        <spring.boot.version>2.6.11</spring.boot.version>
     </properties>
 
     <dependencies>
@@ -118,10 +116,6 @@
                 <version>${maven-gpg.version}</version>
                 <configuration>
                     <executable>gpg</executable>
-                    <!-- <keyname>zhoujunlin</keyname> -->
-                    <passphrase>zhoujunlin</passphrase>
-                    <interactive>false</interactive>
-                    <useAgent>true</useAgent>
                     <gpgArguments>
                         <arg>--pinentry-mode</arg>
                         <arg>loopback</arg>

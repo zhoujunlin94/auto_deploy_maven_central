@@ -6,8 +6,8 @@
     
     <server>
         <id>central</id>
-        <username>nWT5LCSq</username>
-        <password>1w1eH3ADSOwxY5becQi0qaxdEPKFRxZrZ9M9bOGzUfOY</password>
+        <username>${{ env.MAVEN_USERNAME }}</username>
+        <password>${{ env.MAVEN_PASSWORD }}</password>
     </server>
 
   </servers>
