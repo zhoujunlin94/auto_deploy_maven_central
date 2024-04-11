@@ -12,6 +12,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Maven Central Publish
         uses: ./ # 使用当前仓库中的 Action
-      - name: List files in target directory
-        run: ls ./target/
 

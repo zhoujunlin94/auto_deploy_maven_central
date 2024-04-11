@@ -15,5 +15,5 @@ export GPG_TTY=zhoujunlin
 mvn clean install
 
 
-ls /github
+ls /github/workspace
 
