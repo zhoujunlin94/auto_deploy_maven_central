@@ -117,8 +117,8 @@
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>${maven-gpg.version}</version>
                 <configuration>
-                    <executable>setsid gpg</executable>
-                    <keyname>zhoujunlin</keyname>
+                    <executable>gpg</executable>
+                    <!-- <keyname>zhoujunlin</keyname> -->
                     <passphrase>zhoujunlin</passphrase>
                     <interactive>false</interactive>
                     <useAgent>true</useAgent>
