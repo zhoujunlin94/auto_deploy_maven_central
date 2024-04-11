@@ -114,7 +114,7 @@
                 <configuration>
                     <executable>gpg</executable>
                     <!-- 禁用 GPG 代理 -->
-                    <useAgent>false</useAgent>
+                    <batch>true</batch>
                     <keyname>zhoujunlin</keyname>
                     <passphrase>zhoujunlin</passphrase>
                 </configuration>
