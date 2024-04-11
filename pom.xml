@@ -122,6 +122,10 @@
                     <passphrase>zhoujunlin</passphrase>
                     <interactive>false</interactive>
                     <useAgent>true</useAgent>
+                    <gpgArguments>
+                        <arg>--pinentry-mode</arg>
+                        <arg>loopback</arg>
+                    </gpgArguments>
                 </configuration>
                 <executions>
                     <execution>
