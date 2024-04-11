@@ -115,7 +115,7 @@
                     <executable>gpg</executable>
                     <keyname>zhoujunlin</keyname>
                     <passphrase>zhoujunlin</passphrase>
-                    <workingDirectory>${project.build.directory}</workingDirectory>
+                    <ascDirectory>${project.build.directory}</ascDirectory>
                 </configuration>
                 <executions>
                     <execution>
