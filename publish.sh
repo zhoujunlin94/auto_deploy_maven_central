@@ -6,15 +6,7 @@ GPG_PASSPHRASE=$2
 MAVEN_USER_NAME=$3
 MAVEN_PASSWORD=$4
 
-echo "$GPG_PRIVATE_KEY" >> private.key
-
-chmod +x private.key
-
-ls -l /github/workspace
-
-cat private.key
-
-gpg --batch --import private.key
+echo "$GPG_PRIVATE_KEY" | gpg --batch --import
 
 gpg --list-keys
 
