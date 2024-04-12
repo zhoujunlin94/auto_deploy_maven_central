@@ -2,7 +2,9 @@
 
 # 导入已存在的GPG私钥
 
-echo $INPUT_GPG_PRIVATE_KEY >> private.key
+cat private.key
+
+# echo $INPUT_GPG_PRIVATE_KEY >> private.key
 
 gpg --batch --import private.key
 

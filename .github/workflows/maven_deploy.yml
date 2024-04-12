@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      
+      - name: Write Secret to File
+        run: echo "$GPG_PRIVATE_KEY" > ./private.key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          
       - name: Maven Central Publish
         uses: ./ # 使用当前仓库中的 Action
         with:
