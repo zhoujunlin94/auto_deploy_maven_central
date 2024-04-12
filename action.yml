@@ -26,8 +26,8 @@ runs:
   args:
     - /bin/bash
     - -c
-    - |
-      ./publish.sh ${{ inputs.GPG_PRIVATE_KEY }}
+    - chmod +x publish.sh |
+    - ./publish.sh ${{ inputs.GPG_PRIVATE_KEY }}
 
   # using: 'docker'
   # image: 'Dockerfile'
