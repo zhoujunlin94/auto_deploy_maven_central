@@ -27,8 +27,7 @@ runs:
     - /bin/bash
     - -c
     - |
-      echo "$GPG_PRIVATE_KEY" | gpg --batch --import
-      gpg --list-keys
+      ./publish.sh ${{ inputs.GPG_PRIVATE_KEY }}
 
   # using: 'docker'
   # image: 'Dockerfile'
