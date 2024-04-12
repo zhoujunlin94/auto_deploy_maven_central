@@ -1,11 +1,12 @@
 #!/bin/bash
 
 # 导入已存在的GPG私钥
+GPG_PRIVATE_KEY=$1
+GPG_PASSPHRASE=$2
 MAVEN_USER_NAME=$3
 MAVEN_PASSWORD=$4
 
-
-cat <(echo -e "$GPG_PRIVATE_KEY") | gpg --batch --import
+echo "$GPG_PRIVATE_KEY" | gpg --batch --import
 
 gpg --list-keys
 
