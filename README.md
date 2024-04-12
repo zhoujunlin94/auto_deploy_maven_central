@@ -4,6 +4,7 @@
 
 需要环境配置
 
-1. gpg私钥
+1. gpg私钥：GPG_PRIVATE_KEY
+2. gpg密码：GPG_PASSPHRASE
 
 
