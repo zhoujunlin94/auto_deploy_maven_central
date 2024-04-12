@@ -8,13 +8,12 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Install gpg secret key
+        run: |
+          cat <(echo -e "${{ secrets.GPG_PRIVATE_KEY }}") | gpg --batch --import
+          gpg --list-keys
+
       - name: Maven Central Publish
-        uses: ./ # 使用当前仓库中的 Action
-        with:
-          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          mvn --batch-mode clean deploy -DskipTests=true -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} --settings .github/maven-settings.xml --file pom.xml
 
