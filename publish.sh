@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # 导入已存在的GPG私钥
-GPG_PRIVATE_KEY=$1
 
-echo "$GPG_PRIVATE_KEY" >> private.key
+echo $INPUT_GPG_PRIVATE_KEY >> private.key
 
 gpg --batch --import private.key
 

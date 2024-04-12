@@ -23,8 +23,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  build_args:
-    GPG_PRIVATE_KEY=${{ inputs.GPG_PRIVATE_KEY }}
-    # - ${{ inputs.GPG_PASSPHRASE }}
-    # - ${{ inputs.MAVEN_USERNAME }}
-    # - ${{ inputs.MAVEN_PASSWORD }}
