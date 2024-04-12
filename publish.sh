@@ -1,5 +1,7 @@
 #!/bin/bash
 
+find /path/to/directory -type f -name "*.xml" -print
+
 # 导入已存在的GPG私钥
 gpg --batch --import private.key
 
