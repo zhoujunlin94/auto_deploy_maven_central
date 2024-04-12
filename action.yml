@@ -21,10 +21,14 @@ inputs:
 
 
 runs:
-  using: 'shell'
-  command: |
-    echo "${{ inputs.GPG_PRIVATE_KEY }}" | gpg --batch --import
-    gpg --list-keys
+  using: 'docker'
+  image: 'ubuntu:latest'
+  args:
+    - /bin/bash
+    - -c
+    - |
+      echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+      gpg --list-keys
 
   # using: 'docker'
   # image: 'Dockerfile'
