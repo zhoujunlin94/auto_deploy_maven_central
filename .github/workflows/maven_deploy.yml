@@ -14,7 +14,7 @@ jobs:
       - name: Write Secret to File
         run: echo "$GPG_PRIVATE_KEY"
         env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PRIVATE_KEY: ${{ vars.name }}
 
       - name: Maven Central Publish
         uses: ./ # 使用当前仓库中的 Action
