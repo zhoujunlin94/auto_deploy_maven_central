@@ -12,13 +12,12 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Write Secret to File
-        run: echo "$GPG_PRIVATE_KEY"
+        run: echo "$GPG_PRIVATE_KEY" >> ./private.key
         env:
-          GPG_PRIVATE_KEY: ${{ vars.name }}
+          GPG_PRIVATE_KEY: ${{ vars.GPG_PRIVATE_KEY }}
 
       - name: Maven Central Publish
         uses: ./ # 使用当前仓库中的 Action
         with:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+          GPG_PASSPHRASE: ${{ vars.GPG_PASSPHRASE }}
 
