@@ -23,8 +23,8 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.GPG_PRIVATE_KEY }}
-    - ${{ inputs.GPG_PASSPHRASE }}
-    - ${{ inputs.MAVEN_USERNAME }}
-    - ${{ inputs.MAVEN_PASSWORD }}
+  args: |
+    --build-arg GPG_PRIVATE_KEY=${{ inputs.GPG_PRIVATE_KEY }}
+    --build-arg GPG_PASSPHRASE=${{ inputs.GPG_PASSPHRASE }}
+    --build-arg MAVEN_USERNAME=${{ inputs.MAVEN_USERNAME }}
+    --build-arg MAVEN_PASSWORD=${{ inputs.MAVEN_PASSWORD }}
