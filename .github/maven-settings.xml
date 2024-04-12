@@ -6,8 +6,8 @@
     
     <server>
         <id>central</id>
-        <username>$MAVEN_USERNAME</username>
-        <password>$MAVEN_PASSWORD</password>
+        <username>+2T4Jghs</username>
+	      <password>a4hIKCpDrFIj03Bl0vcwtCc2tNAcr8zP0QEyKQvIUKWw</password>
     </server>
 
   </servers>

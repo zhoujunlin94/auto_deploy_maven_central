@@ -10,15 +10,6 @@ inputs:
     description: 'GPG_PASSPHRASE'
     required: true
     default: "EMPTY"
-  MAVEN_USERNAME:
-    description: 'MAVEN_USERNAME'
-    required: true
-    default: "EMPTY"
-  MAVEN_PASSWORD:
-    description: 'MAVEN_PASSWORD'
-    required: true
-    default: "EMPTY"
-
 
 runs:
   using: 'docker'
