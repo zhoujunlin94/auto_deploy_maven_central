@@ -4,6 +4,8 @@ FROM maven:3.9.6-eclipse-temurin-17
 # 将发布脚本添加到容器中
 COPY publish.sh /publish.sh
 
+RUN apt-get update && apt-get install -y gnupg
+
 # 设置可执行权限
 RUN chmod +x /publish.sh
 
